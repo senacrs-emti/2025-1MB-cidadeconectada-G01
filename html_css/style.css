@@ -1,0 +1,71 @@
+* {
+    font-family: "Segoe UI", sans-serif;
+}
+
+.container{
+    justify-content: center;
+    text-align: center;
+    color: #22c55e;
+    font-size: x-large;
+}
+.texto{
+    text-align: center;
+    color: #cbd5e1;
+}
+.texto h2{
+    font-weight: bold;
+}
+body{
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+.semaforo {
+    background-color: #111827;
+    width: 130px;
+    height: 350px;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+
+.luz {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+}
+
+.vermelha {
+    background-color: #ef4444;
+    box-shadow: 0 0 25px #ef4444;
+    animation: pisca 6s infinite;
+}
+
+.amarela {
+    background-color: #facc15;
+    box-shadow: 0 0 25px #facc15;
+    animation: pisca 6s infinite 2s;
+}
+
+.verde {
+    background-color: #22c55e;
+    box-shadow: 0 0 25px #22c55e;
+    animation: pisca 6s infinite 4s;
+}
+
+.poste {
+    width: 30px;
+    height: 100px;
+    background-color: #1e293b;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
+}
+@keyframes pisca {
+    0%, 30% { opacity: 1; }
+    31%, 100% { opacity: 0.3; }
+}
+
