@@ -2,6 +2,10 @@
     font-family: "Segoe UI", sans-serif;
 }
 
+body{
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
 .container{
     justify-content: center;
     text-align: center;
@@ -15,57 +19,82 @@
 .texto h2{
     font-weight: bold;
 }
-body{
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-}
 .semaforo {
-    background-color: #111827;
-    width: 130px;
-    height: 350px;
-    border-radius: 30px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  background-color: #111827;
+  width: 130px;
+  height: 350px;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
 }
 
 .luz {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin: 0 auto;
-    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+  opacity: 0.3;
 }
 
 .vermelha {
-    background-color: #ef4444;
-    box-shadow: 0 0 25px #ef4444;
-    animation: pisca 6s infinite;
+  background-color: #ef4444;
+  animation: piscaVermelha 6s infinite;
 }
 
 .amarela {
-    background-color: #facc15;
-    box-shadow: 0 0 25px #facc15;
-    animation: pisca 6s infinite 2s;
+  background-color: #facc15;
+  animation: piscaAmarela 6s infinite;
 }
 
 .verde {
-    background-color: #22c55e;
-    box-shadow: 0 0 25px #22c55e;
-    animation: pisca 6s infinite 4s;
+  background-color: #22c55e;
+  animation: piscaVerde 6s infinite;
 }
 
 .poste {
-    width: 30px;
-    height: 100px;
-    background-color: #1e293b;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
-}
-@keyframes pisca {
-    0%, 30% { opacity: 1; }
-    31%, 100% { opacity: 0.3; }
+  width: 30px;
+  height: 100px;
+  background-color: #1e293b;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
 }
 
+@keyframes piscaVermelha {
+  0%, 20% { opacity: 1; }
+  21%, 100% { opacity: 0.3; }
+}
+
+@keyframes piscaAmarela {
+  0%, 20% { opacity: 0.3; }
+  21%, 40% { opacity: 1; }
+  41%, 100% { opacity: 0.3; }
+}
+
+@keyframes piscaVerde {
+  0%, 40% { opacity: 0.3; }
+  41%, 60% { opacity: 1; }
+  61%, 100% { opacity: 0.3; }
+}
+
+footer {
+    background-color: #1c8f20;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    
+}
+
+footer {
+    background-color: #4a9228; 
+    color: white;          
+    text-align: center; 
+    padding: 12px;         
+    font-size: 24px;     
+    font-weight: bold;
+}
