@@ -8,13 +8,13 @@
 
 body {
     background: linear-gradient(135deg, #0f172a, #1e293b);
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .texto {
@@ -71,6 +71,7 @@ body {
   border-radius: 50%;
   margin: 0 auto;
   box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+  opacity: 0.3;
 }
 
 .vermelha {
@@ -101,12 +102,12 @@ body {
 }
 
 footer {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
-  color: #94a3b8;
-  font-size: 0.9em;
+    background-color: #4a9228; 
+    color: white;          
+    text-align: center; 
+    padding: 12px;         
+    font-size: 18px;     
+    font-weight: bold;
 }
 
 /* animação de piscar */

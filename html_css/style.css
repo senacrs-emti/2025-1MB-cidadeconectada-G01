@@ -1,11 +1,20 @@
 * {
-    font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
-body{
+body {
     background: linear-gradient(135deg, #0f172a, #1e293b);
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* overflow: hidden; */
 }
-
 .container{
     justify-content: center;
     text-align: center;
@@ -28,8 +37,6 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  margin: 40px auto;
   box-shadow: 0 0 30px rgba(0,0,0,0.6);
 }
 
@@ -37,23 +44,27 @@ body{
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  margin: 0 auto;
   box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
   opacity: 0.3;
 }
 
 .vermelha {
   background-color: #ef4444;
-  animation: piscaVermelha 6s infinite;
+  box-shadow: 0 0 25px #ef4444;
+  animation: pisca 6s infinite;
 }
 
 .amarela {
   background-color: #facc15;
-  animation: piscaAmarela 6s infinite;
+  box-shadow: 0 0 25px #facc15;
+  animation: pisca 6s infinite 2s;
 }
 
 .verde {
   background-color: #22c55e;
-  animation: piscaVerde 6s infinite;
+  box-shadow: 0 0 25px #22c55e;
+  animation: pisca 6s infinite 4s;
 }
 
 .poste {
@@ -82,13 +93,6 @@ body{
   61%, 100% { opacity: 0.3; }
 }
 
-footer {
-    background-color: #1c8f20;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    
-}
 
 footer {
     background-color: #4a9228; 
