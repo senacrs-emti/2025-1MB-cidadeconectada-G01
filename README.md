@@ -1,32 +1,47 @@
-# Cidade Conectada – Projeto G01  
+# 📜 Readme Template — Semáforos Inteligentes Interligados
+_____________________________________________
 
-Grupo: G01  
+🚦 Projeto: Semáforos Inteligentes Interligados
 
-#Sobre o Projeto
-O projeto Semáforos Inteligentes Interligados simula um sistema de mobilidade urbana onde dois semáforos se comunicam e trabalham de forma automática. Cada semáforo possui sensores que detectam a presença de veículos.
+Grupo: G01
+_____________________________________________
 
-Quando um carro é identificado em um semáforo fechado, o sistema verifica o outro semáforo: se ele estiver aberto, é fechado para dar prioridade ao veículo detectado. Depois, tudo volta ao ciclo normal.
+📌 Sobre o Projeto
 
-A solução integra Arduino, Python HTML, CSS e JavaScript, mostrando como tecnologias diferentes podem trabalhar juntas para criar recursos aplicáveis a cidades inteligentes.
+O Sistema de Semáforos Inteligentes Interligados simula um ambiente de mobilidade urbana onde dois semáforos se comunicam entre si e operam de forma automática.
 
+Cada semáforo possui sensores que detectam veículos.
+Quando um carro é identificado em um semáforo fechado, o sistema analisa o estado do outro semáforo.
+Se ele estiver aberto, ele é fechado para priorizar o veículo detectado. Depois, o sistema volta ao seu ciclo normal.
 
-##Tecnologias Utilizadas
--HTML, CSS & JS - Para interface WEB
--Python & Arduino - para logica e funcionamento do codigo
--Git & GitHub - para controle de versão & colaboração dos membros
+A solução integra Arduino, Python, HTML, CSS e JavaScript, mostrando como tecnologias diversas podem criar soluções para cidades inteligentes.
 
-##Funcionalidades Principais 
-1- Detecção e Prioridade Inteligente: sensores identificam veículos e o sistema decide automaticamente qual semáforo deve abrir, dando prioridade ao fluxo necessário.
+_____________________________________________
 
-2-  Comunicação Entre Semáforos: os dois semáforos trocam informações em tempo real, garantindo que nunca fiquem abertos simultaneamente e mantendo o controle seguro do cruzamento.
+🛠️ Tecnologias Utilizadas
 
+HTML, CSS & JavaScript — Interface Web
 
-##Arquitetura do Projeto
+Python & Arduino — Lógica e funcionamento do sistema
+
+Git & GitHub — Controle de versão e colaboração
+_____________________________________________
+
+⚙️ Funcionalidades Principais
+🔹 1. Detecção e Prioridade Inteligente
+
+O sistema identifica a presença de veículos e abre automaticamente o semáforo necessário.
+
+🔹 2. Comunicação Entre Semáforos
+
+Os dois controladores se comunicam em tempo real, garantindo segurança e evitando conflitos de sinalização.
+_____________________________________________
+
+🗂️ Arquitetura do Projeto
 /2025-1MB-cidadeconectada-G01
 │
 ├── html_css/
 │   ├── img/
-│   │
 │   ├── pagina_inicial.html
 │   ├── pagina_inicial.css
 │   ├── sobre.html
@@ -37,44 +52,46 @@ A solução integra Arduino, Python HTML, CSS e JavaScript, mostrando como tecno
 │   └── sistema_semaforo.py
 │
 └── README.md
+_____________________________________________
 
-##Pré-requisitos e Dependências
--Python
+📦 Pré-requisitos e Dependências
+🐍 Python
 
-Para executar o controlador dos semáforos, instale todas as dependências com:
+Instale todas as dependências:
 
 pip install -r requirements.txt
 
--Arduino
+🛠️ Arduino
 
-Para rodar o código do semáforo físico é necessário:
+Requisitos:
 
 Arduino IDE instalada
 
 Placa configurada (ex.: Arduino Uno)
 
-Porta COM selecionada corretamente
+Porta COM correta selecionada
 
 Upload do arquivo:
 
 semaforo_sss/sistema_semaforo.ino
+_____________________________________________
 
-##Demonstração
+🎬 Demonstração
 
--
--
--
---
--
+-----------------------
 
-##Equipe
+👥 Equipe
+
 Arthur Rocha
+
 Lorenzo Lopes
+
 Victor Muller
+
 Felipe Fedatto
+_____________________________________________
 
-##Status do Projeto
-Em desenvolvimento
+📌 Status do Projeto
 
-
+🚧 Em desenvolvimento
 
