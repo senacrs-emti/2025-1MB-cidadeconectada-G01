@@ -22,3 +22,59 @@ A solução integra Arduino, Python HTML, CSS e JavaScript, mostrando como tecno
 
 
 ##Arquitetura do Projeto
+/2025-1MB-cidadeconectada-G01
+│
+├── html_css/
+│   ├── img/
+│   │
+│   ├── pagina_inicial.html
+│   ├── pagina_inicial.css
+│   ├── sobre.html
+│   └── style.css
+│
+├── semaforo_sss/
+│   ├── sistema_semaforo.ino
+│   └── sistema_semaforo.py
+│
+└── README.md
+
+##Pré-requisitos e Dependências
+-Python
+
+Para executar o controlador dos semáforos, instale todas as dependências com:
+
+pip install -r requirements.txt
+
+-Arduino
+
+Para rodar o código do semáforo físico é necessário:
+
+Arduino IDE instalada
+
+Placa configurada (ex.: Arduino Uno)
+
+Porta COM selecionada corretamente
+
+Upload do arquivo:
+
+semaforo_sss/sistema_semaforo.ino
+
+##Demonstração
+
+-
+-
+-
+--
+-
+
+##Equipe
+Arthur Rocha
+Lorenzo Lopes
+Victor Muller
+Felipe Fedatto
+
+##Status do Projeto
+Em desenvolvimento
+
+
+
