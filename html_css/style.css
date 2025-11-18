@@ -1,0 +1,117 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* overflow: hidden; */
+}
+
+.texto {
+    max-width: 500px;
+  text-align: center;  /* centraliza o texto */
+    margin-bottom: 40px;
+}
+
+
+.texto h1 {
+    font-size: 3em;
+  color: #22c55e; /* Verde */
+}
+
+.texto h2 {
+  font-size: 1.3em;
+  font-weight: 400;
+  color: #cbd5e1;
+  margin-top: 10px;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #22c55e;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background-color: #16a34a;
+  box-shadow: 0 0 15px #22c55e;
+}
+
+.semaforo {
+  background-color: #111827;
+  width: 130px;
+  height: 350px;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+
+.luz {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+  opacity: 0.3;
+}
+
+.vermelha {
+  background-color: #ef4444;
+  box-shadow: 0 0 25px #ef4444;
+  animation: pisca 6s infinite;
+}
+
+.amarela {
+  background-color: #facc15;
+  box-shadow: 0 0 25px #facc15;
+  animation: pisca 6s infinite 2s;
+}
+
+.verde {
+  background-color: #22c55e;
+  box-shadow: 0 0 25px #22c55e;
+  animation: pisca 6s infinite 4s;
+}
+
+.poste {
+  width: 30px;
+  height: 100px;
+  background-color: #1e293b;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
+}
+
+footer {
+    background-color: #4a9228; 
+    color: white;          
+    text-align: center; 
+    padding: 12px;         
+    font-size: 18px;     
+    font-weight: bold;
+}
+
+/* animação de piscar */
+@keyframes pisca {
+  0%, 30% { opacity: 1; }
+  31%, 100% { opacity: 0.3; }
+}
