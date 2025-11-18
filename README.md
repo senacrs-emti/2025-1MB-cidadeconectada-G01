@@ -28,6 +28,7 @@ Git & GitHub — Controle de versão e colaboração
 _____________________________________________
 
 ⚙️ Funcionalidades Principais
+
 🔹 1. Detecção e Prioridade Inteligente
 
 O sistema identifica a presença de veículos e abre automaticamente o semáforo necessário.
